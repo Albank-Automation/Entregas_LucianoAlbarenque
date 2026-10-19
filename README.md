@@ -1,4 +1,4 @@
-ENTREGA 4
+ENTREGA 4*
 
 Integraciones seguras: CRM + Gmail + Slack
 
@@ -62,7 +62,7 @@ Ejecuté el workflow completo (*Execute Workflow*) con 4 emails simulados, carga
 | 4 | Remitente `sin-arroba` (email inválido) | ¿Payload válido? → Descartar (no llega a la IA ni al CRM) | ✅ |
 | 5 | El mismo email de Ana. **2.ª ejecución** | Search **encuentra** el contacto → **Update** (no se duplica) → borrador → Slack | ✅ |
 
-**Ejecución 1:** ejecución Slack devolvió `channel_not_found` porque el canal todavía no existía. Gracias a *On Error → Continue*, el contacto y el borrador se crearon igual. Después de crear `#operaciones`, la 2.ª ejecución terminó toda en verde.
+**Ejecución 1:**  Slack devolvió `channel_not_found` porque el canal todavía no existía. Gracias a *On Error → Continue*, el contacto y el borrador se crearon igual. Después de crear `#operaciones`, la 2.ª ejecución terminó toda en verde.
 
 **Ejecución 2: rama Update en verde, sin contactos duplicados**
 ![Workflow ejecutado por la rama Update](Capturas/workflow_ejecucion_update.png)
